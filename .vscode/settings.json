@@ -13,5 +13,6 @@
     "editor.cursorBlinking": "smooth",
     "git.suggestSmartCommit": false,
     "git.autofetch": true,
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "C_Cpp.errorSquiggles": "Disabled"
 }
