@@ -1,1 +1,17 @@
-{}
+{
+    "code-runner.runInTerminal": true,
+    "editor.formatOnSave": true,
+    "explorer.confirmDelete": false,
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "editor.guides.bracketPairs": true,
+    "editor.cursorSmoothCaretAnimation": true,
+    "terminal.integrated.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "editor.smoothScrolling": true,
+    "editor.fontSize": 16,
+    "editor.formatOnPaste": true,
+    "editor.cursorBlinking": "smooth",
+    "git.suggestSmartCommit": false,
+    "git.autofetch": true,
+    "git.confirmSync": false
+}
