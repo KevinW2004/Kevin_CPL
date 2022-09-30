@@ -3,10 +3,11 @@
 
 <br>
 
-
 # NOTES
 ## 输入输出
-%xx.xf 默认右对齐,  %-xx.xf 左对齐
-
+1. %xx.xf 默认右对齐,  %-xx.xf 左对齐
+2. %.xg 保留x位`有效数字`,科学计数法输出(%.xe 保留x位`小数`,科学计数法)
+3. 
 ## 头文件包含关系
-pow()在<math.h>
+1. pow()在<math.h>
+2. <ctype.h>:toupper()转大写, tolower转小写
