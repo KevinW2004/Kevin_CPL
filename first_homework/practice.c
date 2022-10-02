@@ -8,6 +8,6 @@ int main() {
 
     scanf("%lf %lf", &m, &R);
     F = (G * M * m) / pow(R, 2);
-    printf("%.3e\n", F);
+    printf("%.3le\n", F);
     return 0;
 }
