@@ -2,7 +2,6 @@
     "code-runner.runInTerminal": true,
     "editor.formatOnSave": true,
     "explorer.confirmDelete": false,
-    "workbench.colorTheme": "One Dark Pro Darker",
     "editor.guides.bracketPairs": true,
     "editor.cursorSmoothCaretAnimation": true,
     "terminal.integrated.smoothScrolling": true,
@@ -11,8 +10,15 @@
     "editor.fontSize": 16,
     "editor.formatOnPaste": true,
     "editor.cursorBlinking": "smooth",
-    "git.suggestSmartCommit": false,
+    "git.suggestSmartCommit": true,
     "git.autofetch": true,
     "git.confirmSync": false,
-    "C_Cpp.errorSquiggles": "Disabled"
+    "C_Cpp.errorSquiggles": "Disabled",
+    "C_Cpp.clang_format_style": "{ BasedOnStyle: Chromium, IndentWidth: 4}",
+    "[json]": {
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on"
+        }
+    },
 }
