@@ -11,6 +11,7 @@
 4. pow的底数只能为正数
 5. 开立方（包括正负）可以用cbrt（）s
 6. fgets(str, length, stdin);
+7. '\\'输出一个反斜杠
 
 ## 头文件包含关系
 1. pow()在<math.h>
