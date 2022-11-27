@@ -17,20 +17,24 @@ short int x[(WD - 2) * (HT - 2)],
 //上面两个数组中的存储内容：蛇尾-蛇体-蛇体-...-蛇体-蛇颈-蛇头
 short int foodx, foody;  //食物坐标(foodx, foody)
 
-// void gotoxy(short x, short y) {  //控制台窗口光标定位
-//	static COORD crd;  //定义 COORD 类型(窗口坐标)的静态局部变量 crd
-//	crd.X = x;
-//	crd.Y = y;
-//	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), crd);
-//	return;
-// }
-
-// void showcursor(bool visible) { //显示或隐藏光标
-//	CONSOLE_CURSOR_INFO cursor = {20, visible};
-////用参数visible指定光标是否可见
-//	SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursor);
-////设定光标 	return;
-// }
+void gotoxy(short x, short y) {  //控制台窗口光标定位
+    static COORD crd;  //定义 COORD 类型(窗口坐标)的静态局部变量 crd
+    crd.X = x;
+    crd.Y = y;
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), crd);
+    return;
+}
+/* void gotoxy(int x, int y) {
+    COORD pos = {x, y};
+    HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);  // 获取标准输出设备句柄
+    SetConsoleCursorPosition(hOut, pos);  //两个参数分别是指定哪个窗体，具体位置
+} */
+void showcursor(bool visible) {  //显示或隐藏光标
+    CONSOLE_CURSOR_INFO cursor = {20, visible};
+    //用参数visible指定光标是否可见
+    SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursor);
+    //设定光标 	return;
+}
 
 void initGame() {  //初始化游戏
     //初始化地图

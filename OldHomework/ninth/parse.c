@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define Width 100
+#define Width 1000
 typedef struct Arg {
     char name;
     bool type;  // 1 = need data
@@ -51,8 +51,8 @@ void Print() {
 }
 int main() {
     char *rule, *cmd;
-    rule = (char*)malloc(128);
-    cmd = (char*)malloc(1024);
+    rule = (char*)malloc(200);
+    cmd = (char*)malloc(2000);
 
     scanf("%s", rule);
     int lenR = strlen(rule);
@@ -64,8 +64,7 @@ int main() {
     getchar();
     ans_cnt++;
     bool flag = true;  // false 为正在输入参数
-    do {
-        scanf("%s", cmd);
+    while (scanf("%s", cmd) != EOF) {
         if (*cmd == '-' && flag) {
             int NO = findNO(*(cmd + 1));
             if (NO == -1) {
@@ -87,7 +86,7 @@ int main() {
             ans_cnt++;
             flag = true;
         }
-    } while (getchar() != '\n');
+    }
     if (!flag && !error_type) {
         error_type = 2;
         error = *(cmd + 1);
