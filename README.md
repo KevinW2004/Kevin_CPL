@@ -10,13 +10,16 @@
 3. **scanf读取double要加上“l”（小写L）修饰符！！！！！！！！！！！！！**
 4. pow的底数只能为正数
 5. 开立方（包括正负）可以用cbrt（）s
-6. fgets(str, length, stdin);
+6. fgets(str, length, stdin);  !!重要：fgets()会把缓冲区中结尾的'\n'清除
 7. '\\'输出一个反斜杠
+8. Ctrl+z == EOF
 
 ## 头文件包含关系
 1. pow()在<math.h>
-2. <ctype.h>:toupper()转大写, tolower转小写
-   
+2. <ctype.h>:toupper()转大写, tolower转小写;isupper(),islower()
+3. <string.h> strchr;strcmp;strcat;strlen
+4.  <stdbool.h>
+5.  malloc 在<stdlib.h>
 ## 循环、分支
 1. for内部定义的int i在出循环之后会消失
 
@@ -35,6 +38,6 @@
    "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 120,
 ```  
-
+3. 注释快捷键 `Ctrl+/`(//格式) 或`Alt+Shift+A`(/**/格式) 
 # UC Online Courses
 1. editor:sublime (linux), command: subl file 

@@ -2,8 +2,11 @@
 
 */
 #include <math.h>
+#include <stdbool.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 int main() {
-    printf("%d", (int)pow(2, 10));
     return 0;
 }

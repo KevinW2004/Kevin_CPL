@@ -39,4 +39,8 @@
     "css.format.enable": true,
     "cSpell.autoFormatConfigFile": true,
     "C_Cpp.vcFormat.wrap.preserveBlocks": "allOneLineScopes",
+    "files.associations": {
+        "calculator": "c",
+        "stdbool.h": "c"
+    },
 }
