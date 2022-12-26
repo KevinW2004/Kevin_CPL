@@ -20,11 +20,13 @@
 3. <string.h> strchr;strcmp;strcat;strlen
 4.  <stdbool.h>
 5.  malloc 在<stdlib.h>
+6.  atoi(),bsearch()
 ## 循环、分支
 1. for内部定义的int i在出循环之后会消失
 
 ## 算法
-1. 二叉堆（不使用0号位）中位置k的父结点在[k/2],子结点在2k和2k+1
+1. 二叉堆（不使用0号位）中位置k的父结点在k/2,子结点在2k和2k+1
+2. **free一个链表**：
 
 ## 来自互联网
 1. 

@@ -41,6 +41,9 @@
     "C_Cpp.vcFormat.wrap.preserveBlocks": "allOneLineScopes",
     "files.associations": {
         "calculator": "c",
-        "stdbool.h": "c"
+        "stdbool.h": "c",
+        "cstdio": "c",
+        "helping": "c",
+        "api.h": "c"
     },
 }

@@ -162,10 +162,10 @@ void run() {  //主函数
     while (1) {
         score++;
         game_time++;
-        if (game_time % 60 == 0)  //墙
+        /* if (game_time % 60 == 0)  //墙
             generate_block(scr);
         if (game_time % 80 == 0)  //飞弹
-            generate_block(scr, 6);
+            generate_block(scr, 6); */
         // if(game_time/1000>=1 && day==0)
         // system("color 07"),game_time=0,day=1;
         // //去掉这些注释（run函数里的所有）可开启昼夜更替（但我觉得不好看）。。。

@@ -74,3 +74,7 @@ bool isValid(char* a) {
     }
     return brackets.top == 0;
 }
+int main() {
+	return 0;
+}
+
